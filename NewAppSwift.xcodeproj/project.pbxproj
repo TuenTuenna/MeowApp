@@ -3,17 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6A6616A022BB78C30062267D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A66169F22BB78C30062267D /* AppDelegate.swift */; };
 		6A6616A222BB78C30062267D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6616A122BB78C30062267D /* ViewController.swift */; };
 		6A6616A522BB78C30062267D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6616A322BB78C30062267D /* Main.storyboard */; };
-		6A6616A722BB78C50062267D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6616A622BB78C50062267D /* Assets.xcassets */; };
 		6A6616AA22BB78C50062267D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6616A822BB78C50062267D /* LaunchScreen.storyboard */; };
 		6A6616B522BB78C50062267D /* NewAppSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6616B422BB78C50062267D /* NewAppSwiftTests.swift */; };
 		6A6616C022BB78C50062267D /* NewAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6616BF22BB78C50062267D /* NewAppSwiftUITests.swift */; };
+		6A6616CF22BB80E90062267D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6616CE22BB80E90062267D /* Assets.xcassets */; };
+		6A6616D122BB81380062267D /* Cat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A6616D022BB81380062267D /* Cat.wav */; };
+		6A6F88F522BBADCD00EDBB58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6F88F422BBADCD00EDBB58 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 		6A66169F22BB78C30062267D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A6616A122BB78C30062267D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A6616A422BB78C30062267D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6A6616A622BB78C50062267D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A6616A922BB78C50062267D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A6616AB22BB78C50062267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A6616B022BB78C50062267D /* NewAppSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewAppSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +48,9 @@
 		6A6616BB22BB78C50062267D /* NewAppSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewAppSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6616BF22BB78C50062267D /* NewAppSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppSwiftUITests.swift; sourceTree = "<group>"; };
 		6A6616C122BB78C50062267D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A6616CE22BB80E90062267D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A6616D022BB81380062267D /* Cat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Cat.wav; sourceTree = "<group>"; };
+		6A6F88F422BBADCD00EDBB58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6F88F522BBADCD00EDBB58 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				6A6616B322BB78C50062267D /* NewAppSwiftTests */,
 				6A6616BE22BB78C50062267D /* NewAppSwiftUITests */,
 				6A66169D22BB78C30062267D /* Products */,
+				6A6F88F322BBADCD00EDBB58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +103,11 @@
 		6A66169E22BB78C30062267D /* NewAppSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6A6616CE22BB80E90062267D /* Assets.xcassets */,
+				6A6616D022BB81380062267D /* Cat.wav */,
 				6A66169F22BB78C30062267D /* AppDelegate.swift */,
 				6A6616A122BB78C30062267D /* ViewController.swift */,
 				6A6616A322BB78C30062267D /* Main.storyboard */,
-				6A6616A622BB78C50062267D /* Assets.xcassets */,
 				6A6616A822BB78C50062267D /* LaunchScreen.storyboard */,
 				6A6616AB22BB78C50062267D /* Info.plist */,
 			);
@@ -123,6 +130,14 @@
 				6A6616C122BB78C50062267D /* Info.plist */,
 			);
 			path = NewAppSwiftUITests;
+			sourceTree = "<group>";
+		};
+		6A6F88F322BBADCD00EDBB58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A6F88F422BBADCD00EDBB58 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +220,7 @@
 				};
 			};
 			buildConfigurationList = 6A66169722BB78C30062267D /* Build configuration list for PBXProject "NewAppSwift" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -230,8 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A6616AA22BB78C50062267D /* LaunchScreen.storyboard in Resources */,
-				6A6616A722BB78C50062267D /* Assets.xcassets in Resources */,
+				6A6616CF22BB80E90062267D /* Assets.xcassets in Resources */,
 				6A6616A522BB78C30062267D /* Main.storyboard in Resources */,
+				6A6616D122BB81380062267D /* Cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
